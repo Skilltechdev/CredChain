@@ -142,3 +142,27 @@ To deploy and test this contract:
 2. Clone the repository
 3. Run tests: `clarinet test`
 4. Deploy to testnet: `clarinet deploy --testnet`
+
+## Project Structure
+
+credential-management/
+├── contracts/
+│   ├── credential.clar          # Core contract
+│   ├── credential-registry.clar  # Contract for credential type management
+│   └── credential-access.clar   # Contract for access control & permissions
+├── tests/
+│   ├── credential_test.ts       # Core contract tests
+│   ├── registry_test.ts         # Registry contract tests
+│   └── access_test.ts          # Access control tests
+├── scripts/
+│   ├── deploy.ts               # Deployment scripts
+│   └── setup.ts               # Initial setup scripts
+├── frontend/                   # Web interface
+│   ├── src/
+│   ├── public/
+│   └── components/
+├── docs/
+│   ├── api.md                 # API documentation
+│   ├── architecture.md        # System architecture
+│   └── schemas.md            # Credential schemas
+└── README.md
